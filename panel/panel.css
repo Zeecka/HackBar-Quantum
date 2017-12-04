@@ -1,0 +1,131 @@
+html,body{
+    background: #eeeeee;
+}
+*{
+    color: black;
+    font-family: Arial, sans-serif;
+}
+nav > *{
+    display: inline-block;
+}
+select{
+    background-color: #fff;
+    color: black;
+    border: 1px solid white;
+}
+option{
+    background-color: #fff;
+    color: black;
+    border: 0;
+}
+button,button:hover,button:focus,button:active{
+    cursor: pointer;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    margin-left: 5px;
+    height: 27px;
+    line-height: 27px;
+    width: 27px;
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 4px;
+}
+#increment{
+    font-weight: 800;
+    color: #2fa529;
+}
+#decrement{
+    font-weight: 800;
+    color: #a52929;
+}
+nav > div:first-child{
+    margin-left: 5px;
+}
+.togglenav{
+    padding: 3px 7px;
+    margin: 0 5px;
+}
+.leftbut{
+    margin-bottom: 10px;
+}
+.button{
+    background-color: #dddddd;
+    color: black;
+}
+.button:hover,.button.active{
+    -webkit-box-shadow:inset 0 0 5px 0 rgba(0,0,0,0.5);
+    box-shadow:inset 0 0 5px 0 rgba(0,0,0,0.5);
+    background-color: #888888;
+    cursor: pointer;
+}
+section{
+    display: none;
+    margin-top: 5px;
+}
+#section1{
+    display: block;
+    margin-top: 15px;
+}
+#section2{
+    display: block;
+}
+
+.main_left{
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main_right{
+    display: inline-block;
+    width: calc(100% - 110px);
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.main_left > div{
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+}
+.sect1{
+    display: inline-block;
+    vertical-align: middle;
+}
+textarea{
+    resize: none;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #3a3a3a;
+}
+.checkboxes{
+    margin-left: 150px;
+}
+.check2{
+    margin-left: 25px;
+}
+.menu{
+    position: absolute;
+    display: none;
+    background-color: #dddddd;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.5);
+    margin-top: 3px;
+    margin-left: -5px;
+}
+.togglenav.active .menu{
+    display: block;
+}
+.menuitem{
+    padding: 5px 3px;
+    margin: 5px;
+    background-color: rgba(0,0,0,0.2);
+    -webkit-box-shadow:inset 0 0 2px 0 rgba(0,0,0,0.5);
+    min-width: 100px;
+}
+.menuitem:hover{
+    background-color: rgba(0,0,0,0.3);
+}

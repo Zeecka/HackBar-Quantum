@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="panel.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="panel.js" charset="utf-8"></script>
+    <!-- 
+    https://developer.mozilla.org/son/docs/Tools 
+    https://github.com/victorporof/firefox-restartless-template
+    -->
+  </head>
+  <body>
+    <nav>
+        <select>
+            <option value="INT">INT</option>
+            <option value="HEX">HEX</option>
+            <option value="OCT">OCT</option>
+            <option value="Alpha">Alpha</option>
+            <option value="AlphaNum">AlphaNum</option>
+        </select>
+        <button id="decrement" class="button">-</button><!--
+        --><button id="increment" class="button">+</button><!--
+        --><div id="SQL" class="togglenav button">SQL ▾
+            <div class="menu">
+                <div class="menuitem">Test</div>
+                <div class="menuitem">Test</div>
+                <div class="menuitem">Test</div>
+                <div class="menuitem">Test</div>
+            </div>
+        </div><!--
+        --><!--
+        --><div id="XSS" class="togglenav button">XSS ▾</div><!--
+        --><div id="LFI" class="togglenav button">LFI ▾
+            <div class="menu">
+                <div class="menuitem">php://input</div>
+                <div class="menuitem">php://filter/convert.base64-encode/resource=</div>
+                <div class="menuitem">../../etc/passwd</div>
+                <div class="menuitem">../../var/log/httpd</div>
+                <div class="menuitem">../../proc/self/environ</div>
+                <div class="menuitem">../../etc/my.cnf</div>
+            </div>
+        </div><!--
+        --><div id="PHP" class="togglenav button">PHP ▾
+            <div class="menu">
+                <div class="menuitem">&lt;?php phpinfo(); ?></div>
+                <div class="menuitem">&lt;?= system($_GET['c']); ?></div>
+                <div class="menuitem">&lt;?= system($_GET['c']); ?></div>
+                <div class="menuitem">&lt;?= $_GET['cm']($_GET['prm']); ?></div>
+            </div>
+        </div><!--
+        --><div id="Encryption" class="togglenav button">Encryption ▾</div><!--
+        --><div id="Encoding" class="togglenav button">Encoding ▾</div><!--
+        --><div id="Other" class="togglenav button">Other ▾</div><!--
+    --></nav>
+    <section id="section1"><!--
+        --><div class="main_left sect1">
+            <div id="loadurl" class="leftbut button">Load Url</div>
+            <div class="leftbut button">Split Url</div>
+            <div class="leftbut button">Execute</div>
+        </div><!--
+        --><div class="main_right sect1">
+            <textarea name="textarea" id="GETAREA"></textarea>
+        </div><!--
+    --></section>
+    <section id="section2"><!--
+        --><div class="checkboxes"><input id="checkBoxPost" type="checkbox">Enable Post Data<!--
+        --><input id="checkBoxCookies" type="checkbox" class="check2">Change Cookies<!--
+        --><input id="checkBoxReferrer" type="checkbox" class="check2">Enable Referrer</div><!--
+    --></section>
+    <section id="section3"><!--
+        --><div class="main_left">Post Data</div><!--
+        --><div class="main_right"><textarea name="textarea" id="POSTDATA"></textarea></div><!--
+    --></section>
+    <section id="section4"><!--
+        --><div class="main_left">Cookies</div><!--
+        --><div class="main_right"><textarea name="textarea" id="COOKIES"></textarea></div><!--
+    --></section>
+    <section id="section5"><!--
+        --><div class="main_left">Referrer</div><!--
+        --><div class="main_right"><textarea name="textarea" id="REFERER"></textarea></div><!--
+    --></section>
+  </body>
+</html>

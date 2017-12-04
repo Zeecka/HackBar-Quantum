@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Hackbar Quantum",
+  "version": "0.1",
+  "description": "Hackbar Quantum for web pentesting",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "author": "Zeecka",
+  "developer": {
+    "name": "Zeecka"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "<all_urls>",
+    "activeTab"
+  ],
+  "devtools_page": "hackbar.html"
+}
