@@ -22,5 +22,10 @@
     "<all_urls>",
     "activeTab"
   ],
-  "devtools_page": "hackbar.html"
+  "devtools_page": "hackbar.html",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
 }
